@@ -1,5 +1,15 @@
 # October 2026
 
+**2026-10-05**
+* **Hours:** 2
+* **Code (Python):** 
+  * Continued practicing * pattern loops and studying the underlying mathematical logic. 
+  * *Blocker:* Confused about how to dynamically handle user input for sizing the pattern grids.
+  * Started learning functions: definitions, calling, default arguments, and parameters. 
+  * Explored the concept of recursion and base cases, and how functions improve code reusability.
+
+---
+
 **2026-10-04**
 * **Hours:** 6
 * **Code (Python):** Practiced nested loops by building `*` pattern shapes. 
