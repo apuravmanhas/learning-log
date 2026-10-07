@@ -1,5 +1,14 @@
 # October 2026
 
+**2026-10-06**
+* **Hours:** 1
+* **Code (Python):** 
+  * Practiced foundational coding questions centered on functions.
+  * Reviewed the mechanics of function definitions, syntax, and execution flow.
+  * *Blocker:* Still experiencing some confusion around function definitions—specifically how parameters map to arguments and how the code execution jumps when a function is called.
+
+---
+
 **2026-10-05**
 * **Hours:** 2
 * **Code (Python):** 
