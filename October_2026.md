@@ -1,5 +1,14 @@
 # October 2026
 
+**2026-10-07**
+* **Hours:** 1
+* **Code (SQL):** 
+  * Studied fundamental SQL aggregate functions: COUNT(), SUM(), AVG(), and MIN().
+  * Practiced using the GROUP BY clause to aggregate data across categories.
+  * Reinforced basic database querying structures and syntax.
+
+---
+
 **2026-10-06**
 * **Hours:** 1
 * **Code (Python):** 
