@@ -1,5 +1,15 @@
 # October 2026
 
+**2026-10-08**
+* **Hours:** 1
+* **Code (SQL):** 
+  * Practiced the core SQL command categories: DDL (Definition), DML (Manipulation), TCL (Transaction Control), and DCL (Data Control).
+* **Blocker / Status:** 
+  * University exams, assignments, and projects are heavily starting to eat into my time and focus. 
+  * *Note:* Experiencing the classic collision between the academic workload and actual engineering skill-building. Need to tightly manage my time so this doesn\'t derail my daily momentum.
+
+---
+
 **2026-10-07**
 * **Hours:** 1
 * **Code (SQL):** 
