@@ -1,5 +1,15 @@
 # October 2026
 
+**2026-10-09**
+* **Hours:** 5
+* **Code (Data Science Stack):** 
+  * Studied the theoretical foundations of NumPy: explored 
+darray attributes, data types, array creation methods, and core applications.
+  * Reviewed Matplotlib fundamentals: understanding the hierarchy of figures, subplots, and basic charting/graphing capabilities.
+  * *Note:* Heavy theory day. Need to ensure this is immediately followed up by practical coding implementation tomorrow so the concepts don\'t fade.
+
+---
+
 **2026-10-08**
 * **Hours:** 1
 * **Code (SQL):** 
