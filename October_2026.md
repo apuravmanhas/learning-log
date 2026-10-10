@@ -1,5 +1,15 @@
 # October 2026
 
+**2026-10-10**
+* **Hours:** 1
+* **Code (NumPy):** 
+  * Transitioned from theory to practical code execution (prep for upcoming university exams).
+  * Practiced creating, reshaping, and manipulating 1D and 2D 
+p.array structures.
+  * Wrote scripts to test array slicing, vectorization concepts, and core mathematical/statistical functions.
+
+---
+
 **2026-10-09**
 * **Hours:** 5
 * **Code (Data Science Stack):** 
