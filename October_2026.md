@@ -1,5 +1,16 @@
 # October 2026
 
+**2026-10-11**
+* **Hours:** 6
+* **Academic Engineering (Software Engineering Exam Prep):** 
+  * Completed an intensive, structured revision of the Software Engineering lifecycle:
+    1. *Requirements Engineering:* Requirements analysis, Software Requirements Specification (SRS), and Data Dictionaries.
+    2. *System Design & Modeling:* Data Flow Diagrams (DFD), Entity-Relationship (ER) diagrams, and Unified Modeling Language (UML).
+    3. *Estimation & Project Management:* Software Project Management (SPM), size estimation, effort/cost modeling via the COCOMO model, and project scheduling using Gantt charts.
+    4. *Risk Management:* Risk identification, assessment, and mitigation planning.
+
+---
+
 **2026-10-10**
 * **Hours:** 1
 * **Code (NumPy):** 
