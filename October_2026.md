@@ -1,5 +1,18 @@
 # October 2026
 
+**2026-10-12**
+* **Hours:** 7
+* **Academic Engineering (OOP & C++ Deep Dive for University Exams):** 
+  * Structured and revised Object-Oriented Programming concepts from foundational mechanics to runtime dispatch:
+    1. *Object Mechanics & Lifecycle:* Member functions, friend functions, constructors (types, initialization lists), and destructors.
+    2. *Inheritance Hierarchies:* Single, multiple, multilevel, hierarchical, and hybrid inheritance; member access control (public, protected, private).
+    3. *Compile-Time (Static) Polymorphism:* Function overloading, unary operator overloading, and binary operator overloading.
+    4. *Run-Time (Dynamic) Polymorphism:* Function overriding, virtual functions (vtable/vptr mechanics), and virtual base classes (resolving the diamond problem).
+    5. *Robustness & Control Flow:* Exception handling fundamentals (	ry, catch, 	hrow) and defining custom user-defined exceptions.
+  * Wrote and analyzed concrete code implementations exploring edge cases for each paradigm.
+
+---
+
 **2026-10-11**
 * **Hours:** 6
 * **Academic Engineering (Software Engineering Exam Prep):** 
