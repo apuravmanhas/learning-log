@@ -1,5 +1,20 @@
 # October 2026
 
+**2026-10-13**
+* **Hours:** 3
+* **Code & Data Science Foundations (NumPy & Matplotlib Deep Dive):** 
+  * *NumPy (Array Manipulation & Vectorization):*
+    * Practiced multi-dimensional slicing and advanced boolean masking (filtering arrays via conditional indexing).
+    * Experimented with array broadcasting rules across mismatched shapes to understand memory layout and dimension expansion.
+    * Implemented axis-specific aggregations (\xis=0\ vs \xis=1\) and basic matrix operations (p.dot\, matrix transpositions).
+  * *Matplotlib (Visualization & Object-Oriented API):*
+    * Transitioned from standard stateful plotting to the Object-Oriented API using \plt.subplots()\, manipulating \Figure\ and \Axes\ objects directly.
+    * Built multi-panel plots, distribution histograms, and scatter plots mapped to synthetic datasets.
+    * Configured plot aesthetics: custom markers, gridlines, axis scaling, legends, and layout padding via \plt.tight_layout()\.
+  * *Key Takeaway:* Practiced feeding vectorized NumPy transformations directly into visualization pipelines without relying on inefficient Python loops.
+
+---
+
 **2026-10-12**
 * **Hours:** 7
 * **Academic Engineering (OOP & C++ Deep Dive for University Exams):** 
