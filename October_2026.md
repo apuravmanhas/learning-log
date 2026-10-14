@@ -1,5 +1,20 @@
 # October 2026
 
+**2026-10-14**
+* **Hours:** 6
+* **Academic Engineering (DBMS — Foundations to Indexing for University Exams):**
+  * Covered the full DBMS stack in sequential order from relational theory to physical storage structures:
+    1. *Relational Model Foundations:* Relations, attributes, degree (number of attributes), cardinality (number of tuples), and static vs. dynamic relations.
+    2. *Keys & Constraints:* Super key, candidate key, primary key, foreign key, and composite key. Enforcing referential integrity and constraint propagation across tables.
+    3. *SQL Command Architecture:* DDL (CREATE, ALTER, DROP), DML (INSERT, UPDATE, DELETE), TCL (COMMIT, ROLLBACK), and DCL (GRANT, REVOKE) — reviewed their execution context within transaction boundaries.
+    4. *Storage & Indexing — B-Trees and B+ Trees:* Structural differences between B-Trees (data stored at all nodes) and B+ Trees (data only at leaf nodes, linked list at leaves). Insertion, deletion, and search time complexity. Why RDBMS engines (MySQL InnoDB, PostgreSQL) exclusively use B+ Trees for secondary indexing.
+    5. *Hashing & Collision Resolution:*
+       * Static Hashing: Open addressing (linear probing, quadratic probing, double hashing) vs. Separate chaining.
+       * Dynamic/Extensible Hashing: Global depth, local depth, bucket splitting, and directory doubling mechanics. All associated formulas and bit-manipulation concepts for bucket address calculation.
+  * Studied all standard formulas for hashing, tree height, and space utilization across indexing methods.
+
+---
+
 **2026-10-13**
 * **Hours:** 3
 * **Code & Data Science Foundations (NumPy & Matplotlib Deep Dive):** 
