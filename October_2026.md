@@ -1,5 +1,17 @@
 # October 2026
 
+**2026-10-15**
+* **Hours:** 6
+* **Code & Data Science (Data Visualization Stack + NumPy Deep Dive):**
+  * Covered the complete Python visualization ecosystem in structured order from foundational charts to statistical distributions:
+    1. *Core Chart Types (Matplotlib):* Bar charts, pie charts, scatter plots, and histograms. Practised axis labeling, text alignment, title placement, and custom tick formatting.
+    2. *Statistical Distribution Plots (Matplotlib + Seaborn):* Box plots (IQR, whiskers, outlier detection), violin plots (kernel density estimation mirrored around a center axis), and swarm plots (non-overlapping jittered points showing full data distribution).
+    3. *Seaborn Integration:* Layering Seaborn statistical plots on Matplotlib Axes objects. Understood how Seaborn is a high-level wrapper around Matplotlib using the same Figure/Axes architecture under the hood.
+    4. *Text Annotation & Layout:* Word clouds for frequency-weighted text visualization. Axis text alignment controls, annotation placement, and multi-subplot layout management.
+    5. *NumPy (Mathematical & Statistical Functions):* Revisited and deepened understanding of array attributes (shape, dtype, ndim, size, strides). Practiced mathematical ufuncs (np.sqrt, np.log, np.exp, np.power) and statistical aggregations (np.mean, np.median, np.std, np.var, np.percentile, np.corrcoef).
+
+---
+
 **2026-10-14**
 * **Hours:** 6
 * **Academic Engineering (DBMS — Foundations to Indexing for University Exams):**
