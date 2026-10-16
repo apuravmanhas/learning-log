@@ -1,5 +1,18 @@
 # October 2026
 
+**2026-10-16**
+* **Hours:** 4
+* **Academic Engineering (DBMS — Relational Algebra):**
+  * Covered the complete formal query language underlying SQL, in dependency order from primitive to derived operators:
+    1. *Primitive Unary Operators:* Selection (sigma) for horizontal filtering by condition, Projection (pi) for vertical filtering by attribute columns, and Rename (rho) for schema aliasing.
+    2. *Primitive Set Operators:* Union, Intersection, and Set Difference applied to union-compatible relations. Studied cardinality behavior for each operation.
+    3. *Relational Comparison & Conditions:* Compound predicates using AND, OR, NOT. Comparison operators across attribute domains and their mapping to SQL WHERE clauses.
+    4. *Join Operators:* Cartesian Product (base), Theta Join (generalised condition), Equi-Join (equality-only condition), Natural Join (automatic attribute matching), Semi-Join, and Anti-Join. Studied output schema and tuple count for each.
+    5. *Division Operator:* Relational division for queries of the form find tuples related to ALL values in another relation. Mapped to its SQL equivalent using NOT EXISTS / EXCEPT.
+    6. *Extended Operators:* Grouping (gamma) with aggregate functions and Ungrouping. How these map to GROUP BY and ROLLUP/CUBE in SQL.
+
+---
+
 **2026-10-15**
 * **Hours:** 6
 * **Code & Data Science (Data Visualization Stack + NumPy Deep Dive):**
