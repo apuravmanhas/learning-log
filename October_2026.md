@@ -1,5 +1,48 @@
 # October 2026
 
+**2026-10-17**
+* **Hours:** 9
+* **Computer Architecture (Full Curriculum — 24-Part Deep Dive):**
+  * Covered computer architecture from binary fundamentals through GPU/VLIW execution, cache mathematics, multicore coherence, DRAM internals, and Networks-on-Chip in six sequential phases:
+
+  * **Phase 1 — Foundations (Parts 1–4):**
+    1. *Bits, Bytes & Number Systems:* Binary, decimal, hexadecimal conversions; two's complement; powers of 2 as design constants (2^10=1K, 2^20=1M, 2^30=1G); logarithm rules for bit-width estimation.
+    2. *How Computers Work:* CPU, memory, registers, ALU; the fetch–decode–execute cycle; data path vs control path; why registers exist instead of operating directly on RAM.
+    3. *Instruction Formats:* Opcode fields, register fields, immediate fields; R/I/J format comparison; addressing modes (immediate, register, direct, indirect, base+offset); stack machines and push/pop semantics; big-endian vs little-endian byte ordering.
+    4. *Performance Mathematics:* Clock rate (Hz), cycle time (1/f), CPI (cycles per instruction), IPC (instructions per cycle), CPU execution time = Instruction Count × CPI × Cycle Time; Amdahl's Law for speedup; latency vs throughput distinction.
+
+  * **Phase 2 — Processor Execution (Parts 5–8):**
+    5. *RISC vs CISC & Pipelining:* RISC philosophy (fixed-length instructions, load/store architecture, large uniform register file); five-stage pipeline: IF → ID → EX → MEM → WB.
+    6. *Pipeline Timing & Metrics:* Single-cycle vs pipelined execution time; pipeline speedup = number of stages (ideal); cycle time limited by slowest stage; stalls (bubbles) and their CPI cost; throughput = 1 instruction/cycle at steady state.
+    7. *Hazards:* Data hazards (RAW — true dependency, WAR — anti-dependency, WAW — output dependency); structural hazards (shared hardware resource conflicts); control hazards (branch decision delay); forwarding/bypassing paths to eliminate RAW stalls without flushing.
+    8. *Branch Prediction:* Branch penalty calculation; Branch Prediction Buffers (BPB) indexed by PC; Branch Target Buffers (BTB) for target address caching; 1-bit predictor (state flips on misprediction); 2-bit saturating counter (requires two consecutive mispredictions to change prediction); floating-point pipeline latency and structural hazard patterns.
+
+  * **Phase 3 — Advanced Execution (Parts 9–12):**
+    9. *Instruction-Level Parallelism (ILP):* Loop unrolling to expose independent instructions; static scheduling to fill delay slots; true vs name dependencies; anti-dependency and output dependency elimination via renaming.
+    10. *Dynamic Scheduling — Tomasulo's Algorithm:* Reservation stations per functional unit; operand capture from Common Data Bus (CDB) on result broadcast; issue, execute, write-result stages; out-of-order execution with in-order issue.
+    11. *Reorder Buffer (ROB) & Speculation:* ROB entries track instruction state (issue → execute → write → commit); in-order commit preserves precise exceptions; register renaming via ROB tags eliminates WAR/WAW hazards; branch misprediction causes ROB flush and re-fetch from correct path.
+    12. *Parallelism Variants:* Coarse-grained vs fine-grained vs simultaneous multithreading (SMT/Hyper-Threading); superscalar (multiple issue slots, hardware detects parallelism); VLIW (compiler-scheduled multiple operations per instruction word); SIMD (single instruction, multiple data lanes); GPU architecture: thousands of lightweight SIMD cores, thread blocks, warps, and global/shared memory indexing.
+
+  * **Phase 4 — Memory Hierarchy & Caches (Parts 13–16):**
+    13. *Memory Hierarchy Basics:* Registers → L1 → L2 → L3 → DRAM → SSD; SRAM (fast, expensive, 6T cell, used in caches) vs DRAM (slow, dense, capacitor cell, refreshed); temporal and spatial locality as the justification for cache existence; average memory access time (AMAT) formula.
+    14. *Cache Address Decomposition:* Block offset bits = log2(block size); index bits = log2(number of sets); tag bits = address bits − index − offset; direct-mapped, n-way set-associative, and fully-associative organizations; worked address decomposition problems.
+    15. *Cache Miss Classification & Policies:* Compulsory (cold start), capacity (working set too large), conflict (set thrashing) misses; replacement policies: LRU, FIFO, pseudo-LRU (tree-based); write-through + write-allocate vs write-back + write-allocate tradeoffs; dirty bit, valid bit, tag.
+    16. *Cache Optimization:* Victim caches (catch conflict evictions); multilevel cache inclusion/exclusion; hardware prefetching; early restart (supply partial cache line before fill completes); critical word first; miss penalty = L2 access time + L3 access time × miss rate; AMAT minimization strategies.
+
+  * **Phase 5 — Multicore Memory & I/O (Parts 17–20):**
+    17. *Cache Coherence & Consistency:* Why per-core private caches create stale-data problems; write-propagate (update) vs write-invalidate (invalidate on write) protocols; bus snooping (all caches observe every transaction); directory-based coherence for scalable multiprocessors; sequential consistency model.
+    18. *MESI Protocol:* Four stable states — Modified (dirty, exclusive), Exclusive (clean, exclusive), Shared (clean, multiple readers), Invalid; full state-transition diagram on read/write hits and misses; false sharing (two threads access different variables in the same cache line, causing ping-pong invalidations); directory entry storage cost = 2 bits × number of processors per cache line.
+    19. *DRAM Internals & Disk Scheduling:* Row/column address multiplexing; CAS (Column Address Strobe) latency; refresh cycles and tRFC timing; channels, ranks, banks, and interleaving for parallelism; disk scheduling algorithms — FCFS, SSTF, SCAN (elevator), C-SCAN; seek time + rotational latency + transfer time = total access time.
+    20. *Networks-on-Chip (NoC):* Why off-chip buses bottleneck at many cores; mesh topology (k×k grid, bisection bandwidth = 2k links); router micro-architecture: route computation, virtual channel allocation, switch allocation, switch traversal, link traversal (5 pipeline stages); flits (flow control units) vs phits vs packets; virtual channels for deadlock freedom; wormhole vs store-and-forward flow control.
+
+  * **Phase 6 — Advanced NoC & Revision (Parts 21–24):**
+    21. *Adaptive Routing & Arbitration:* Oblivious (deterministic) vs adaptive routing; counting minimal paths in mesh; arbitration schemes — round-robin, age-based (oldest packet first); output port selection; avoiding livelock in adaptive routing.
+    22. *Advanced NoC Architectures:* CHIPPER (bufferless deflection router); DeBAR, BLESS, MinBD (bufferless designs); SLIDER (stochastic latency); PDN (priority deflection network); BEU (bypass express unit); central buffer pool designs and their area/power tradeoffs vs distributed buffering.
+    23. *Advanced Topics:* Network slack (latency tolerance for traffic shaping); memory-level parallelism (MLP) and its interaction with NoC latency; network sensitivity analysis; core-to-cache mapping strategies in tiled architectures; advanced L2 cache indexing (XOR-based, skewed).
+    24. *Full Revision & Mock Test:* Integrated problem set spanning all six phases — binary conversion, pipeline timing diagrams, Tomasulo issue/execute/write tables, cache address decomposition, MESI state transitions, and NoC routing hop-count calculations.
+
+---
+
 **2026-10-16**
 * **Hours:** 4
 * **Academic Engineering (DBMS — Relational Algebra):**
