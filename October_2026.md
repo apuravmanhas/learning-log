@@ -1,5 +1,48 @@
 # October 2026
 
+**2026-10-18**
+* **Hours:** 5
+* **AI Ethics & Responsible AI (6-Module Survey):**
+  * Covered the foundations, dilemmas, technical safeguards, legal frameworks, corporate governance, and frontier risks of ethical AI in sequential dependency order:
+
+  * **Module 1 — Foundations & Why Ethics Matters:**
+    1. *The AI Stack:* Situated ML, Deep Learning, Generative AI, and Agentic AI on a capability ladder; defined where human oversight currently fails at each layer.
+    2. *The Black Box Problem:* Why deep networks (especially transformers) produce decisions that cannot be mechanistically traced by their own builders; distinguished opacity from unpredictability.
+    3. *Intent vs. Impact Gap:* How formally correct, well-intentioned systems produce discriminatory or harmful real-world outcomes when deployed outside their training distribution.
+    4. *Ethics vs. Law:* Regulatory lag — why legislation operates on decade timescales while model capabilities compound annually; ethics as the interim operating constraint for practitioners.
+
+  * **Module 2 — Core Ethical Dilemmas:**
+    5. *Algorithmic Bias & Fairness:* Historical data encodes past discrimination; trained models inherit and automate it at scale. Studied COMPAS recidivism predictor and hiring-filter case studies.
+    6. *Privacy & Mass Surveillance:* Data scraping pipelines, facial recognition accuracy disparities across demographic groups (NIST FRVT findings), and the erosion of contextual integrity in personal data.
+    7. *Autonomy & Deepfakes/Synthetic Media:* Generative media as an attack surface on public epistemic trust; non-consensual synthetic imagery; disinformation at scale and detection limitations.
+    8. *Future of Work:* Displacement vs. augmentation debate; algorithmic management systems (Uber, Amazon warehouse) that set pace, evaluate performance, and terminate without human review.
+    9. *Environmental Cost:* Training compute footprint (GPT-3 = ~552 tCO2e); inference-at-scale water consumption for cooling; carbon cost vs. capability gain as a governance variable.
+
+  * **Module 3 — Technical Pillars of Trustworthy AI:**
+    10. *Explainability & Interpretability (XAI):* Local explanations (LIME, SHAP) vs. global interpretability (attention maps, saliency); distinction between post-hoc explanation and inherently interpretable models.
+    11. *Robustness & Security:* Adversarial examples (FGSM, PGD attacks), data poisoning (backdoor triggers in training sets), model inversion (reconstructing training data from outputs), membership inference attacks.
+    12. *Transparency & Provenance:* Model Cards (Mitchell et al.) for documenting intended use, performance metrics, and limitations; Data Nutrition Labels for dataset lineage, collection method, and known biases.
+    13. *Human-in-the-Loop (HITL):* Design patterns for meaningful human oversight — override mechanisms, audit trails, confidence thresholds for deferral, and avoiding automation bias where humans rubber-stamp AI outputs.
+
+  * **Module 4 — Global Legal Landscape:**
+    14. *EU AI Act (2024):* World''s first risk-based AI regulation. Four tiers: Prohibited (social scoring, real-time biometric surveillance in public), High-Risk (credit, hiring, critical infrastructure), Limited-Risk (disclosure obligations for chatbots), Minimal-Risk (spam filters, AI games).
+    15. *US Regulatory Approach:* Executive Order 14110 (Oct 2023) on AI safety; NIST AI RMF as voluntary industry standard; Blueprint for an AI Bill of Rights (OSTP); fragmented state-level laws (Illinois BIPA, California CPRA).
+    16. *Global South & UNESCO Framework:* UNESCO Recommendation on the Ethics of AI (2021) — 193 member states; digital colonialism critique (data extracted from Global South, value captured in Global North); equity and data sovereignty provisions.
+    17. *Intellectual Property & Copyright:* Training data scraping legality (ongoing US litigation — NYT v. OpenAI, Getty v. Stability AI); output ownership ambiguity; fair use doctrine applied to model training.
+
+  * **Module 5 — Corporate AI Governance:**
+    18. *Governance Lifecycle:* Standardised AI system lifecycle: Design (requirements + ethics review) → Develop (bias auditing during training) → Deploy (staged rollout, monitoring hooks) → Monitor (drift detection, incident response).
+    19. *Organizational Roles:* AI Ethics Officer mandate and authority; Cross-Functional AI Review Boards (legal, engineering, product, affected-communities representation); Risk Committees with escalation triggers.
+    20. *NIST AI RMF:* Four core functions — Govern (culture, accountability), Map (context and risk identification), Measure (quantify risk with metrics), Manage (prioritize, respond, monitor). Framework profiles for sector-specific deployment.
+    21. *Auditing & Red-Teaming:* Independent adversarial evaluation before release; structured red team roles (attacker, monitor, scribe); pre-deployment bias audits vs. post-deployment monitoring; responsible disclosure pipelines.
+
+  * **Module 6 — Frontier & Future Risks:**
+    22. *Frontier Risk Management:* Emergent capabilities in large models that appear discontinuously and were not present at smaller scale; evaluating dangerous capability thresholds (CBRN uplift, cyberoffense, deception).
+    23. *Agentic AI Ethics:* The ethical shift when AI moves from generation to autonomous action — executing code, calling APIs, making purchases; minimal footprint principle, reversibility requirements, and sandboxing.
+    24. *Alignment Theory:* The technical challenge of specifying and maintaining human-compatible objectives in increasingly capable systems; reward hacking, goal misgeneralization, and the inner/outer alignment distinction.
+
+---
+
 **2026-10-17**
 * **Hours:** 9
 * **Computer Architecture (Full Curriculum — 24-Part Deep Dive):**
