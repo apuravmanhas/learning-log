@@ -1,5 +1,19 @@
 # October 2026
 
+**2026-10-19**
+* **Hours:** 3
+* **AI Prompt Engineering (Structure, Techniques, and Use Cases):**
+  * Studied the principles and mechanics of effective prompt design for large language models in sequential order from fundamentals to applied patterns:
+    1. *Core Prompt Anatomy:* Five structural elements every high-quality prompt should contain: (i) Persona/Role — assign a specific professional identity to specialise model behaviour; (ii) Task/Action — use direct action verbs (write, compare, classify, summarise) rather than open-ended questions; (iii) Context and Background — supply relevant data, audience details, or situational framing upfront; (iv) Constraints and Boundaries — hard limits on length, tone, format, and explicit exclusions; (v) Output Format — specify the exact delivery shape (bullet list, markdown table, numbered steps, word-capped paragraph).
+    2. *Zero-Shot Prompting:* Issuing a direct task with no examples; relies entirely on the model's pre-trained knowledge. Best suited for well-defined, unambiguous tasks where format flexibility is acceptable.
+    3. *Few-Shot Prompting:* Providing 2-3 concrete input-output demonstration pairs inside the prompt; the model infers the desired style, tone, and structure from the pattern and applies it to the new input. Effective for enforcing custom formats the model would not adopt zero-shot.
+    4. *Chain-of-Thought (CoT) Prompting:* Instructing the model to reason step-by-step before producing a final answer (trigger phrase: think step by step or walk through your reasoning). Measurably improves accuracy on multi-step arithmetic, logic, and causal inference tasks by externalising intermediate reasoning into the token stream.
+    5. *Role-Based Prompting:* Framing the entire query around a domain persona (e.g., You are a senior systems architect reviewing this design for failure modes) to shift the model into specialised vocabulary, critical posture, and depth of analysis appropriate to that role.
+    6. *Prompt Chaining:* Decomposing a complex, multi-stage goal into a linear sequence of smaller, dependent prompts where each output feeds as context into the next. Avoids context overload and keeps intermediate outputs reviewable and correctable before the chain progresses.
+    7. *Applied Use Cases by Domain:* Content and copywriting (blog posts, email hooks, video scripts); coding and technical work (code generation, debugging, unit test generation, algorithm explanation); data analysis (report summarisation, document extraction, structured table formatting); business strategy (brainstorming, agenda drafting, marketing outlines).
+
+---
+
 **2026-10-18**
 * **Hours:** 5
 * **AI Ethics & Responsible AI (6-Module Survey):**
