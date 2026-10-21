@@ -1,5 +1,15 @@
 # October 2026
 
+**2026-10-21**
+* **Hours:** 1
+* **Project Work (SnipToolKit — SEO Optimisation):**
+  * Applied on-page and technical SEO improvements to the SnipToolKit website:
+    1. *Meta & Semantic HTML:* Audited and updated `<title>`, `<meta description>`, and Open Graph tags across pages; ensured heading hierarchy (H1 → H2 → H3) is semantically correct and keyword-relevant.
+    2. *Technical SEO:* Verified `robots.txt` and `sitemap.xml` are present and correctly structured; checked canonical tags to prevent duplicate-content penalties.
+    3. *Performance & Discoverability:* Reviewed page load indicators that affect Core Web Vitals (LCP, CLS, FID) since Google uses these as ranking signals; ensured descriptive `alt` text on all images for accessibility and image-search indexing.
+
+---
+
 **2026-10-20**
 * **Hours:** 4
 * **Project Work (SnipToolKit — Online Compiler: Bug Fixes, Edge Cases, TypeScript):**
