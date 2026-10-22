@@ -1,5 +1,18 @@
 # October 2026
 
+**2026-10-22**
+* **Hours:** 6
+* **Project Work (VerityTick / SQL-mini — Financial Market Integrity & Database Trading Engine):**
+  * Architected and implemented VerityTick, a high-integrity transactional trading, audit, and fraud analytics engine built on PostgreSQL 18 and Python:
+    1. *Transactional Order Matching:* Built in-database limit order matching under strict price-time priority using PL/pgSQL transactions, supporting limit orders, partial fills, cancellations, and order book state management.
+    2. *Double-Entry Financial Ledger:* Implemented immutable ledger tables enforcing atomic balance reservations and postings at the database constraint level, with independent automated balance reconciliation to guarantee zero drift.
+    3. *Cryptographic Audit Chain:* Constructed tamper-evident event logging using `pgcrypto` SHA-256 hash chains, providing cryptographic integrity proofs, broken-chain detection, and external verification checkpoints.
+    4. *Recursive Fraud Analytics:* Engineered bounded recursive SQL CTEs to detect multi-hop circular fund transfer rings across accounts within sliding time windows, surfacing explainable alert metadata.
+    5. *Time-Series Market Data & Partitioning:* Configured table partitioning for high-throughput tick data ingestion, along with incremental OHLCV (1m, 5m, 1h) candlestick rollups engineered to handle late-arriving ticks.
+    6. *Security & Test Isolation:* Enforced multi-tenant isolation using Row-Level Security (RLS) and least-privilege DB roles; isolated the pytest integration suite to dedicated test databases and automated CI validation via GitHub Actions.
+
+---
+
 **2026-10-21**
 * **Hours:** 1
 * **Project Work (SnipToolKit — SEO Optimisation):**
