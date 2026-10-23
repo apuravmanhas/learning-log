@@ -1,5 +1,16 @@
 # October 2026
 
+**2026-10-23**
+* **Hours:** 2
+* **Project Work (VerityTick / SQL-mini — Engine Optimization & Bug Hardening):**
+  * Conducted focused debugging, query plan profiling, and edge-case hardening on the VerityTick database engine:
+    1. *Concurrency & Lock Contention:* Resolved row-level locking bottlenecks in the PL/pgSQL matching function; tuned `SELECT FOR UPDATE` order traversal to prevent potential deadlocks during concurrent multi-order executions.
+    2. *Ledger Invariant Verification:* Patched edge-case conditions in double-entry balance validation; ensured boundary cases (zero-amount and negative transfers) strictly fail at the database constraint level before transaction serialization.
+    3. *Query Optimization & Index Profiling:* Inspected `EXPLAIN ANALYZE` execution plans on OHLCV candlestick aggregation queries across partitioned tick tables; added composite index coverage to eliminate sequential partition scans.
+    4. *Test Fixture Hardening:* Streamlined test teardown and transaction rollbacks in `pytest` to guarantee deterministic state reset and prevent test pollution across isolated test suites.
+
+---
+
 **2026-10-22**
 * **Hours:** 6
 * **Project Work (VerityTick / SQL-mini — Financial Market Integrity & Database Trading Engine):**
