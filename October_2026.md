@@ -1,5 +1,19 @@
 # October 2026
 
+**2026-10-25**
+* **Hours:** 8
+* **Project Work (PageDB — Embedded C++20 Disk-Backed B+ Tree Storage Engine):**
+  * Architected and implemented the core foundation of PageDB, a single-process, disk-backed key-value storage engine built from scratch in C++20 (Milestones M0 through M4 + B+ tree index):
+    1. *Architecture Specification & Strict Build Pipeline (M0–M1):* Authored formal specification, binary page/superblock formats (docs/FORMAT.md), failure model/durability contracts, and ADRs. Configured modern C++20 CMake build with strict compiler flags (`-Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Werror -fstack-protector-strong`) and AddressSanitizer/UndefinedBehaviorSanitizer (ASan/UBSan) presets.
+    2. *Safe Core Primitives & Checked Serialization (M2):* Implemented strong type identifiers (`PageId`, `Lsn`, `TxnId`), monadic `Result<T>` / `Status` types, overflow-checked arithmetic, explicit little-endian `ByteWriter`/`ByteReader`, unsigned-byte lexicographic key comparator, and RFC 3720 Castagnoli CRC32C checksum verification.
+    3. *POSIX Storage Layer & Fault-Injectable VFS (M3):* Engineered move-only RAII `FileHandle` (`O_NOFOLLOW`, 0600 permissions, `S_ISREG` verification, `EINTR`/short-I/O retry loops) with a fault-injection `PosixIoOps` seam; enforced single-process database locking via `fcntl(F_SETLK)` combined with in-process `(st_dev, st_ino)` tracking.
+    4. *4096-Byte Slotted-Page & Allocator (M3):* Built 4096-byte `PageCodec`, `Superblock`, and `SlottedPage` supporting variable-length records with non-overlapping slot validation, zero-scrubbed slack space, and automatic compaction; implemented persistent `PageStore` and free-list `PageAllocator`.
+    5. *Buffer Pool & RAII Page Guards (M4):* Built fixed-capacity `BufferPool` with CLOCK page replacement policy, dirty-page flushing, and move-only `PageGuard` RAII primitives ensuring strict single-unpin invariants under concurrent access.
+    6. *Byte-Aware B+ Tree Index & Database API:* Implemented disk-backed B+ tree featuring node split, merge, redistribution, and free-list page reuse; surfaced high-level `Database` API and CLI backed by persistent free-list reclamation tests.
+    7. *WAL & Crash Recovery Specification (M7):* Authored detailed design proposal for Write-Ahead Logging (WAL) and ARIES-style crash recovery protocols to guarantee ACID durability across system crashes.
+
+---
+
 **2026-10-24**
 * **Hours:** 4
 * **Project Work (VerityTick / SQL-mini — Privilege Hardening, Audit Chain Wiring & Concurrency Testing):**
