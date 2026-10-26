@@ -1,5 +1,18 @@
 # October 2026
 
+**2026-10-26**
+* **Hours:** 8
+* **Project Work (PageDB — WAL, Crash Recovery, SWMR Concurrency & Benchmarking [M7–M12]):**
+  * Completed advanced systems milestones M7 through M12 on PageDB, elevating the C++20 storage engine into a crash-resilient, transactional engine with SWMR concurrency:
+    1. *Staged No-Steal WAL & Crash Recovery (M7):* Implemented Write-Ahead Logging (WAL) enforcing the WAL protocol (log records flushed to disk strictly before corresponding dirty pages) under a staged NO-STEAL policy; engineered crash recovery routines replaying LSN-sequenced records to restore consistent state post-crash.
+    2. *Explicit Transaction Management & Rollback (M8):* Developed transaction primitives supporting explicit `BEGIN`, `COMMIT`, and `ROLLBACK` lifecycles; built rollback mechanisms to clean up dirty modifications in slotted pages and release reserved free-list pages on abort without corrupting B+ tree state.
+    3. *Checkpointing & Safe Log Truncation (M9):* Built database checkpointing to periodically flush dirty pages to disk and write sync checkpoints; implemented log reclamation logic to safely truncate recycled WAL segments and bound recovery scan times.
+    4. *SWMR Concurrency & Thread-Safe Buffer Pool (M10):* Implemented Single-Writer Multiple-Reader (SWMR) concurrency control; hardened the `BufferPool` with reader-writer latches (`std::shared_mutex`), eliminating race conditions between concurrent readers and the CLOCK page eviction worker.
+    5. *Deep Invariant Verification & Fault Injection (M11):* Built an automated verifier validating global storage invariants (B+ tree key ordering, non-overlapping slot directory offsets, uncorrupted free-lists); created deterministic POSIX fault injection via `PosixIoOps` to validate resilience against simulated torn writes and mid-transaction I/O failures.
+    6. *Microbenchmarks & Release Architecture (M12):* Added reproducible microbenchmarking suites measuring random/sequential read and write throughput (IOPS) and tail latencies across varied cache sizes; authored comprehensive release documentation.
+
+---
+
 **2026-10-25**
 * **Hours:** 8
 * **Project Work (PageDB — Embedded C++20 Disk-Backed B+ Tree Storage Engine):**
