@@ -1,5 +1,15 @@
 # October 2026
 
+**2026-10-27**
+* **Hours:** 4
+* **Open Source Contribution (Hugging Face — `huggingface/peft` PR #4063):**
+  * Authored and submitted an open-source fix to Hugging Face PEFT (Parameter-Efficient Fine-Tuning), resolving Issue #4013:
+    1. *Issue Diagnosis & Root Cause Analysis:* Investigated broken quick-test script execution in `examples/adamss_finetuning/test_adamss_quick.py`; traced failure to broken import references and outdated configuration argument signatures following upstream refactoring of the AdaMSS (Adaptive Multi-Scale Subspace) architecture.
+    2. *Module Namespace & Argument Realignment:* Modernized internal imports to reflect the current PEFT module hierarchy; reconciled configuration parameters to match the active AdaMSS configuration class contracts (+12 / -14 lines diff).
+    3. *Local Verification & Pull Request Submission:* Executed the quick test locally to verify clean initialization and execution with zero runtime warnings; authored and submitted [PR #4063](https://github.com/huggingface/peft/pull/4063) with issue linking and regression test verification.
+
+---
+
 **2026-10-26**
 * **Hours:** 8
 * **Project Work (PageDB — WAL, Crash Recovery, SWMR Concurrency & Benchmarking [M7–M12]):**
