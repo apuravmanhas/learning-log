@@ -1,5 +1,17 @@
 # October 2026
 
+**2026-10-29**
+* **Hours:** 5
+* **AI Infrastructure & Research (Hugging Face PEFT — Codebase Architecture Deep Dive):**
+  * Conducted an in-depth architectural survey of the `huggingface/peft` repository, dissecting how parameter-efficient fine-tuning methods are mathematically structured and injected into transformer backbones:
+    1. *Model Wrapping & Adapter Lifecycle:* Traced how `PeftModel` wraps arbitrary `torch.nn.Module` backbones; analyzed base model parameter freezing (`requires_grad = False`), adapter layer injection hooks, and dynamic forward-pass routing.
+    2. *LoRA Implementation & Weight Fusion:* Studied low-rank factorization mechanics ($\Delta W = B \times A$ where $r \ll d$); analyzed initialization guarantees ($B = 0, A \sim \mathcal{N}(0, \sigma^2)$) to ensure identity behavior at step 0; examined scaling factors ($\alpha / r$) and zero-latency inference weight merging via `merge_and_unload()`.
+    3. *Advanced Adaptation Paradigms (AdaLoRA & AdaMSS):* Examined dynamic rank allocation in AdaLoRA via importance-score singular value pruning; inspected multi-scale subspace projections in AdaMSS following the recent test harness updates.
+    4. *Prefix & Prompt Tuning Mechanisms:* Contrasted reparameterization adapters with virtual prompt methods; analyzed how soft prompt embeddings are prepended directly into transformer self-attention key/value matrices via temporary MLP projection networks.
+    5. *State Serialization & Multi-Adapter Routing:* Inspected adapter state-dict isolation in safetensors format (`save_pretrained`), memory footprint differences across mixed-precision regimes, and runtime multi-adapter switching via `set_adapter()` for multi-tenant serving.
+
+---
+
 **2026-10-28**
 * **Hours:** 4
 * **Frontend & Asset Pipeline (GitHub Profile Architecture & Visual Engineering):**
