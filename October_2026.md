@@ -1,5 +1,17 @@
 # October 2026
 
+**2026-10-30**
+* **Hours:** 6
+* **Open Source (Hugging Face PEFT PR #4086) & Computer Vision (YOLO11x Production Integration):**
+  * Completed and submitted upstream breaking-change migrations to Hugging Face PEFT alongside production edge vision deployment:
+    1. *Upstream Ecosystem Compatibility (Hugging Face PEFT — PR #4086):* Resolved Issue #4076 by engineering backward/forward-compatible patches across 6 files (+30 / -11 diff) for the upcoming `transformers` 5.x migration.
+    2. *Dynamic Attention Projections:* Implemented `is_transformers_ge_v5` version checks to dynamically map ViT and MiT-b0 attention target modules from legacy `query`/`value` to `q_proj`/`v_proj` across AdaMSS scripts and LoRA computer vision notebooks (`image_classification_peft_lora.ipynb`, `semantic_segmentation_peft_lora.ipynb`).
+    3. *API Contract & Dataset Migration:* Replaced deprecated `warmup_ratio` in `TrainingArguments` with backward-compatible `warmup_kwargs`; resolved non-namespaced Hugging Face Hub `HfUriError` exceptions by migrating dataset references (`cifar100` -> `uoft-cs/cifar100`); verified BERT/RoBERTa backbones remain unaffected.
+    4. *Hardware Verification & Tooling:* Validated end-to-end training runs on local hardware (RTX 3050, CUDA 12.4); passed strict `ruff check` and `ruff format` linters across all modified scripts.
+    5. *Production Edge Vision (YOLO11x Deployment):* Integrated production-grade YOLO11x weapon detection weights into the vision pipeline with Git LFS tracking; authored comprehensive inference latency and throughput benchmark documentation.
+
+---
+
 **2026-10-29**
 * **Hours:** 5
 * **AI Infrastructure & Research (Hugging Face PEFT — Codebase Architecture Deep Dive):**
