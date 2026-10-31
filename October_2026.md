@@ -1,5 +1,18 @@
 # October 2026
 
+**2026-10-31**
+* **Hours:** 4
+* **Python Internals & Functional Programming (Comprehensive Function Architecture — 3 Tiers):**
+  * Completed a 3-tier deep dive into Python functions, from interpreter fundamentals to advanced metaprogramming and runtime bytecode manipulation:
+    1. *Foundations & Call Semantics:* Evaluated Python's execution model for callable objects (`def`); differentiated parameter definition from argument passing; unpacked positional, keyword, default, and variadic packing conventions (`*args` tuple unpacking and `**kwargs` dictionary unpacking); examined explicit return control flow vs. default `None` termination.
+    2. *Advanced Functional Patterns:* Mastered first-class citizen properties and higher-order functions (passing callables, returning functions); analyzed lexical scoping and closures (retaining enclosing non-local scope state via closure cells); constructed decorator wrappers to extend execution pipelines without modifying source implementations.
+    3. *Parameter Enforcement & Memory Generators:* Applied PEP 570 positional-only (`/`) and PEP 3102 keyword-only (`*`) parameter boundaries; analyzed memory characteristics of lazy evaluation via generator functions and `yield`, contrasting generator iterators with eagerly evaluated collections; integrated PEP 484 static typing annotations.
+    4. *Partial Application & Dynamic Dispatch:* Leveraged `functools.partial` to freeze parameter subsets into specialized callables; implemented polymorphic function overloading via `functools.singledispatch` for clean, type-directed execution routing without `isinstance()` branching ladders.
+    5. *Stateful Coroutines & Runtime Memoization:* Engineered bidirectional coroutines using `yield` as an expression to consume streaming input via `.send()`; optimized recursive dynamic programming algorithms using `functools.lru_cache` to eliminate redundant sub-tree traversals.
+    6. *Runtime Metaprogramming & Bytecode Swapping:* Examined Python function object internals, inspecting function code attributes (`__code__`); demonstrated dynamic runtime logic interception and execution swapping by reassigning compiled bytecode objects.
+
+---
+
 **2026-10-30**
 * **Hours:** 6
 * **Open Source (Hugging Face PEFT PR #4086) & Computer Vision (YOLO11x Production Integration):**
