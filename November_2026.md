@@ -1,5 +1,18 @@
 # November 2026
 
+**2026-11-06**
+* **Hours:** 4
+* **Computer Vision & Deep Learning (Object Detection Architectures & Detection Theory):**
+  * Completed an architectural deep dive into computer vision detection algorithms, analyzing mathematical formulations, feature aggregation backbones, and inference optimization pipelines:
+    1. *Evolution of Detection Paradigms:* Evaluated structural differences between two-stage region-proposal detectors (Faster R-CNN with Region Proposal Networks) prioritizing localization fidelity, versus single-stage dense detectors (RetinaNet, modern YOLO architectures) engineered for low-latency real-time inference.
+    2. *Anchor-Based vs. Anchor-Free Frameworks:* Analyzed the inductive biases and hyperparameter sensitivity of predefined anchor grids; contrasted them with anchor-free keypoint/center regression methods (FCOS, CenterNet) and Task-Aligned Assigners (TAL) that dynamically compute joint classification-localization assignment metrics.
+    3. *Multi-Scale Feature Pyramids:* Investigated spatial hierarchy degradation across deep convolutional layers; analyzed Feature Pyramid Networks (FPN) and Path Aggregation Networks (PANet) utilizing bidirectional cross-scale connections to preserve high-resolution spatial features for small-target detection.
+    4. *Loss Formulations & Bounding Box Uncertainty:* Traced the mathematical progression from Smooth L1 regression to IoU-family losses (GIoU, DIoU, CIoU) that optimize directly for spatial overlap; evaluated Distribution Focal Loss (DFL) to model bounding box boundaries as continuous probability distributions under heavy occlusion.
+    5. *Transformer Set Prediction (DETR):* Studied end-to-end Detection Transformers (DETR), examining how bipartite Hungarian matching solves set prediction without heuristic Non-Maximum Suppression (NMS); examined Deformable DETR's sparse sampling attention mechanisms for resolving slow convergence.
+    6. *Edge Inference & Post-Processing Optimization:* Analyzed the computational bottleneck of Non-Maximum Suppression (NMS) during high-density detections; explored Matrix NMS and TensorRT engine compilation with FP16/INT8 post-training quantization for edge device deployment.
+
+---
+
 **2026-11-05**
 * **Hours:** 8
 * **Academic Research & Technical Authorship (Autonomous DevOps Chapter & Edge Vision Conference Paper):**
