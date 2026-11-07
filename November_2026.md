@@ -1,5 +1,17 @@
 # November 2026
 
+**2026-11-07**
+* **Hours:** 2
+* **AI Systems & Machine Learning (Model Distillation, Synthetic Fine-Tuning & Knowledge Transfer):**
+  * Investigated methodologies for synthesizing, transferring, and compressing capabilities from frontier foundation models into compact, specialized student architectures:
+    1. *Foundations of Knowledge Distillation:* Analyzed the classical teacher-student distillation formulation; examined temperature-scaled softmax smoothing ($\tau > 1$) to extract dark knowledge (inter-class probability distributions) and evaluated loss minimization via Kullback-Leibler (KL) divergence against hard label cross-entropy.
+    2. *Synthetic Instruction Synthesis & Self-Instruct:* Explored automated dataset bootstrapping workflows (Self-Instruct and Evol-Instruct paradigms); analyzed how frontier teacher models generate complex reasoning traces (Chain-of-Thought distillation), instruction-response pairs, and synthetic edge-case scenarios.
+    3. *Data Curation & Rejection Sampling:* Studied automated filtering gates to prevent synthetic data pollution and model collapse; examined execution-based verification for code/logic, MinHash deduplication, and automated reward-model rejection sampling to prune low-fidelity teacher generations.
+    4. *Downstream Student Adaptation (PEFT / QLoRA):* Mapped the transfer of distilled synthetic datasets onto small open-weight student backbones (e.g., Llama-3.2-1B/3B, Qwen-2.5); analyzed how low-rank parameter-efficient adaptation (LoRA) and NF4 quantization allow edge and consumer GPUs to ingest distilled capabilities without full weight recalculation.
+    5. *Parameter-Space Model Merging:* Investigated zero-training weight arithmetic to combine multiple specialized student models; evaluated Spherical Linear Interpolation (SLERP), Task Vectors, and TIES-merging (Trim, Elect, and Merge) to resolve parameter interference when blending divergent expert capabilities into a single checkpoint.
+
+---
+
 **2026-11-06**
 * **Hours:** 4
 * **Computer Vision & Deep Learning (Object Detection Architectures & Detection Theory):**
