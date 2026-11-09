@@ -1,5 +1,17 @@
 # November 2026
 
+**2026-11-09**
+* **Hours:** 2
+* **Computer Systems & Hardware Architecture (Multicore Architecture & Memory Consistency Models):**
+  * Investigated the architectural principles governing multicore processors, focusing on memory hierarchy scaling, coherence protocols, and memory ordering semantics:
+    1. *Memory Hierarchy & NUMA Topologies:* Evaluated structural differences between Uniform Memory Access (UMA / SMP) and Non-Uniform Memory Access (NUMA / ccNUMA); analyzed remote memory access latency penalties, local node memory affinity, and interconnect saturation under parallel thread workloads.
+    2. *Advanced Coherence Protocols (MOESI & MESIF):* Contrasted broadcast-based snooping on shared buses with scalable directory-based coherence; examined state extensions beyond standard MESI, focusing on the MOESI 'Owner' state (enabling dirty cache-line sharing across cores without immediate DRAM writeback) and Intel's MESIF 'Forwarder' state for point-to-point interconnect efficiency.
+    3. *Memory Consistency Models:* Disambiguated cache coherence (per-address value consistency) from memory consistency (global execution order across distinct memory locations); contrasted Sequential Consistency (SC) with Total Store Order (TSO in x86) and Weak/Relaxed Ordering (ARM/RISC-V); evaluated hardware memory barriers (`mfence`, `dmb`) and acquire-release synchronization semantics.
+    4. *Hardware Synchronization & Cache-Line Bouncing:* Analyzed atomic primitives including Compare-And-Swap (CAS) and Load-Linked/Store-Conditional (LL/SC); investigated performance degradation induced by cache-line bouncing and false sharing under spinlock contention, evaluating queue-based lock designs (MCS locks) to eliminate global bus invalidation storms.
+    5. *Parallel Scaling Invariants:* Examined the architectural limits of multicore scaling by contrasting Amdahl's Law (fixed-size speedup bounds) with Gustafson's Law (scaled-workload throughput); analyzed on-chip bisection bandwidth constraints across crossbar, ring, and 2D mesh topologies.
+
+---
+
 **2026-11-08**
 * **Hours:** 7
 * **Open Source AI Systems Engineering (`llama.cpp` — Merged PR #31861 / Commit `372dc5c`):**
