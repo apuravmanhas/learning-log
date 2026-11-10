@@ -1,5 +1,16 @@
 # November 2026
 
+**2026-11-10**
+* **Hours:** 5
+* **Operating Systems & Infrastructure (Fedora Linux & UNIX Systems Architecture):**
+  * Studied UNIX system design principles and administered Fedora Linux internals, focusing on POSIX abstractions, security boundaries, and process tooling:
+    1. *UNIX Philosophy & Virtual Filesystem (VFS):* Analyzed the foundational "everything is a file" abstraction across regular files, directories, pipes, sockets, and kernel pseudo-filesystems (`/proc`, `/sys`, `/dev`); traversed the Linux Filesystem Hierarchy Standard (FHS) and inspected inode metadata alongside hard vs. symbolic links.
+    2. *Fedora Ecosystem & Mandatory Access Control:* Navigated Fedora Linux package management (`dnf`, RPM dependency lifecycle) and `systemd` service orchestration (`systemctl`, structured binary logging via `journalctl`); examined SELinux (Security-Enhanced Linux) mandatory access control contexts and policy enforcement.
+    3. *POSIX Permissions, Process Lifecycle & Signals:* Configured octal/symbolic permission bitmasks (`chmod`, `chown`, `umask`) and special bits (SUID, SGID, sticky); traced process creation via `fork()`/`exec()` semantics, zombie/orphan state handling, and POSIX signal delivery (`SIGTERM`, `SIGKILL`, `SIGINT`).
+    4. *I/O Redirection & CLI Stream Pipelines:* Constructed deterministic shell pipelines combining standard stream redirection (`stdin`, `stdout`, `stderr`), anonymous pipes (`|`), and core UNIX stream filters (`grep`, `awk`, `sed`, `find`, `xargs`) for process monitoring and log inspection.
+
+---
+
 **2026-11-09**
 * **Hours:** 2
 * **Computer Systems & Hardware Architecture (Multicore Architecture & Memory Consistency Models):**
