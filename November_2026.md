@@ -1,5 +1,15 @@
 # November 2026
 
+**2026-11-11**
+* **Hours:** 4
+* **Open Source C++ Contribution (KDE `graphics/okular` — Merged MR !1548 / Bug #504083):**
+  * Diagnosed, patched, and merged a C++ Markdown backend fix into KDE Okular ([MR !1548](https://invent.kde.org/graphics/okular/-/merge_requests/1548) resolving [KDE Bug 504083](https://bugs.kde.org/504083)):
+    1. *Root Cause Analysis:* Traced rendering failures in Okular's Markdown converter (`Converter::convertOpenFile()`); identified that passing `m_markdownFile` directly to Discount's `mkd_in()` prevented Discount from parsing leading 1st-level headings when files carried a leading UTF-8 Byte Order Mark (`0xEF 0xBB 0xBF`).
+    2. *Stream Offset Probe & BOM Skipping:* Implemented a deterministic leading-byte probe after rewinding `m_markdownFile`: reads the initial 3 bytes, keeps the stream cursor positioned past the `0xEF 0xBB 0xBF` BOM when detected, or cleanly rewinds back to byte offset `0` otherwise.
+    3. *Regression Testing & Upstream Merge:* Added a regression test covering UTF-8 BOM-prefixed Markdown files in `markdowntest`; verified behavior via automated test execution and direct rendering in Okular, passed KDE GitLab CI pipelines, and achieved official merge into `graphics/okular:master`.
+
+---
+
 **2026-11-10**
 * **Hours:** 5
 * **Operating Systems & Infrastructure (Fedora Linux & UNIX Systems Architecture):**
