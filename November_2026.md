@@ -1,5 +1,18 @@
 # November 2026
 
+**2026-11-12**
+* **Hours:** 3
+* **Cloud Computing & Infrastructure (Cloud Foundations):**
+  * Studied core cloud computing primitives, virtualized infrastructure boundaries, and architectural design principles in sequential dependency order:
+    1. *Service & Deployment Models:* Differentiated IaaS, PaaS, SaaS, and Serverless/FaaS across control-plane ownership and operational overhead; contrasted public, private, hybrid, and multi-cloud topologies alongside CapEx-to-OpEx cost models.
+    2. *Global Infrastructure & Fault Domains:* Examined cloud physical topology — Regions (geographical compliance boundaries), Availability Zones (isolated power/cooling/network failure domains), and Edge Locations (CDN caching); mapped multi-AZ deployment patterns for fault tolerance.
+    3. *Compute Abstractions & Elasticity:* Contrasted hypervisor-backed Virtual Machines (on-demand, reserved, and interruptible/spot capacity models) with container runtimes and event-driven functions; analyzed vertical vs. horizontal scaling, L4/L7 load balancing, and health-check-driven auto-scaling groups.
+    4. *Cloud Networking Primitives:* Covered Virtual Private Cloud (VPC) isolation, CIDR IP addressing across public and private subnets, route tables, Internet/NAT Gateways, DNS routing, and defense-in-depth traffic filtering (stateful security groups vs. stateless network ACLs).
+    5. *Storage Tiers & Durability Guarantees:* Disambiguated block storage (low-latency attached volumes for OS and transactional databases), object storage (flat key-value HTTP blobs with lifecycle tiering and eleven-nines durability models), and managed network file systems (shared POSIX storage).
+    6. *IAM, Security & Architecture Pillars:* Studied Identity and Access Management (IAM) primitives (users, groups, short-lived assumed roles, JSON policy evaluation, Principle of Least Privilege), the Shared Responsibility Model (security *of* vs. *in* the cloud), and core reliability/cost-optimization principles.
+
+---
+
 **2026-11-11**
 * **Hours:** 4
 * **Open Source C++ Contribution (KDE `graphics/okular` — Merged MR !1548 / Bug #504083):**
