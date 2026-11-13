@@ -1,5 +1,17 @@
 # November 2026
 
+**2026-11-13**
+* **Hours:** 3
+* **Cloud Computing & Systems Frontiers (Scope, AI Impact, Research & Future Trajectory):**
+  * Analyzed the current relevance, AI-driven architectural shifts, active systems research, and long-term trajectory of cloud computing in sequential order:
+    1. *Modern Relevance & Cloud Economics (FinOps & Repatriation):* Evaluated why cloud infrastructure remains foundational for elastic scalability, global low-latency distribution, and managed control planes; examined the shift toward FinOps discipline and hybrid/cloud-repatriation trade-offs for predictable, steady-state workloads.
+    2. *AI's Structural Transformation of Cloud Infrastructure:* Analyzed how foundation model training and inference are re-architecting hyperscale clouds from general-purpose CPU virtualization to dense GPU/accelerator fabrics — high-bandwidth RDMA/InfiniBand interconnects, KV-cache memory pressure, specialized inference serving planes, and AIOps-driven autonomous cluster management.
+    3. *Active Cloud Systems Research Frontiers:* Surveyed core systems research topics addressing cloud efficiency and isolation bottlenecks: (i) lightweight serverless execution using Firecracker microVMs and WebAssembly (Wasm) sandboxes to eliminate cold-start latency; (ii) hardware memory disaggregation over Compute Express Link (CXL) to prevent stranded cluster RAM; (iii) Confidential Computing via hardware Trusted Execution Environments (TEEs — AMD SEV-SNP, Intel TDX) protecting data-in-use during multi-tenant cloud AI execution.
+    4. *The Edge-Cloud Continuum:* Examined workload splitting between hyperscale regions and distributed edge nodes — executing latency-critical inference and local telemetry filtering at the edge while offloading heavy training, global state synchronization, and object archival to core cloud clusters.
+    5. *Future Scope, Sustainability & Sovereign Infrastructure:* Explored long-horizon trends shaping cloud computing — liquid/immersion cooling for high-TDP AI racks, carbon-aware spatial/temporal workload scheduling, strict geopolitical data sovereignty requirements (sovereign clouds), and cloud-hosted quantum-classical hybrid interfaces.
+
+---
+
 **2026-11-12**
 * **Hours:** 3
 * **Cloud Computing & Infrastructure (Cloud Foundations):**
