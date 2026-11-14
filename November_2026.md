@@ -1,5 +1,16 @@
 # November 2026
 
+**2026-11-14**
+* **Hours:** 8
+* **Compiler Engineering & Automatic Differentiation (Clad — PR #2531 / Issue #2089):**
+  * Engineered and tested a two-commit Clang AST fix in Clad (CERN's Clang-based automatic differentiation plugin) to safely handle unsupported primal expressions (`Expr_dx == nullptr`) across forward and vector modes:
+    1. *AST Declaration Remapping & Shadowing Fix (`a7a2e2c9` — `StmtClone`):* Resolved runtime stack-garbage bugs when cloning unsupported subtrees like GNU statement expressions (`StmtExpr`). Added `m_DeclSubst` in `StmtClone` (`StmtClone.h`/`.cpp`) to remap `DeclRefExpr` nodes inside each outermost `Clone()` call to the newly cloned `VarDecl`, and added `m_LocalDecls` in `ReferencesUpdater` to prevent outer-scope `m_CurScope` lookups from overwriting shadowed subtree-local declarations.
+    2. *Return Statement & Zero-Tangent Synthesis (`BaseForwardModeVisitor` & Derived Visitors):* Fixed malformed C++ codegen in `VisitReturnStmt` when returning expressions lacking a tangent (`nullptr`). Added `BaseForwardModeVisitor::zeroReturnTangent` (with `canZeroInitType`) to emit valid zero values or clean Clad diagnostics for non-zero-initializable types (non-const references, non-default-constructible structs), handled `void` return operands while preserving side-effecting tangents across scalar forward, pushforward, vector forward, and vector pushforward modes, and avoided invalid C-style casts on synthesized `InitListExpr` zero values.
+    3. *Null-Tangent Guards for Binary Operators, Casts & Conditionals (`a7bcb9de`):* Guarded `VisitBinaryOperator` against `nullptr` tangents passed to `BuildOp` across `+`, `-`, `*`, `/`, `=`, `*=`, `/=`, and `,` (including vector-mode `0 - rhs`, resetting assigned tangents on `=` rather than keeping stale derivatives, and preserving side effects before `,`). Guarded `VisitCStyleCastExpr` and `VisitCXXFunctionalCastExpr` against null/`void` tangents (retaining untyped `InitListExpr` tangents), and updated `VectorForwardModeVisitor::matchBranchTangents` to treat missing ternary branch tangents (`!Dx`) as zero.
+    4. *Regression Testing & Git CI Hygiene:* Added `test/Regressions/issue-2089.cpp` and `test/Regressions/issue-2089-error.cpp` verifying AST output, variable shadowing, runtime derivatives, all differentiation modes, and error diagnostics. Folded `git clang-format-18` diffs back into their logical commits via `git commit --amend`, `git commit --fixup`, and `git rebase -i --autosquash`, verified zero formatting diffs against `origin/master`, and force-pushed PR `#2531`.
+
+---
+
 **2026-11-13**
 * **Hours:** 3
 * **Cloud Computing & Systems Frontiers (Scope, AI Impact, Research & Future Trajectory):**
