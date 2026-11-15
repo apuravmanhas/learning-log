@@ -1,5 +1,17 @@
 # November 2026
 
+**2026-11-15**
+* **Hours:** 3
+* **Academic Engineering (C++ OOP, File I/O, Exceptions & STL — University Lab Test Revision):**
+  * Conducted hands-on coding experimentation and full-syllabus revision for the university C++ practical lab exam in sequential dependency order:
+    1. *Core OOP Concepts & Polymorphism:* Revised classes, encapsulation, constructors/destructors (including virtual destructors), inheritance hierarchies (single, multilevel, multiple, hybrid with virtual base classes for diamond ambiguity), friend functions, compile-time polymorphism (function and unary/binary operator overloading), and runtime polymorphism (`virtual` dispatch, pure virtual functions, and abstract base classes).
+    2. *C++ File Handling (`<fstream>`):* Practiced text and binary file I/O using `ifstream`, `ofstream`, and `fstream` across open modes (`ios::in`, `ios::out`, `ios::app`, `ios::binary`, `ios::trunc`); worked with random-access file pointers (`seekg`, `seekp`, `tellg`, `tellp`) and stream state verification (`eof()`, `fail()`, `bad()`, `good()`).
+    3. *Exception Handling & File I/O Safety:* Implemented structured `try` / `catch` / `throw` control flow, standard `std::exception` subclasses, custom user-defined exception classes, and `fstream` exception masks (`failbit` / `badbit`) to trap missing-file and read/write failure conditions cleanly.
+    4. *Templates & Standard Template Library (STL):* Experimented with generic function/class templates alongside core STL containers (`vector`, `list`, `set`, `map`, `unordered_map`), iterators, and `<algorithm>` utilities (`sort`, `find`, `count_if`, `accumulate`).
+    5. *Integrated Lab Simulation:* Built and compiled multi-concept test programs combining polymorphic class hierarchies, file serialization, custom exception handling, and STL data structures to drill lab-exam edge cases.
+
+---
+
 **2026-11-14**
 * **Hours:** 8
 * **Compiler Engineering & Automatic Differentiation (Clad — PR #2531 / Issue #2089):**
