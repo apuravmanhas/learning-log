@@ -1,5 +1,12 @@
 # November 2026
 
+**2026-11-16**
+* **Hours:** 4
+* **Project Work (Weapon Detector — Repository Refinement):**
+  * Dedicated refinement and maintenance session on the weapon detector GitHub repository, iterating on the project ahead of upcoming updates.
+
+---
+
 **2026-11-15**
 * **Hours:** 3
 * **Academic Engineering (C++ OOP, File I/O, Exceptions & STL — University Lab Test Revision):**
