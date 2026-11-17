@@ -1,5 +1,18 @@
 # November 2026
 
+**2026-11-17**
+* **Hours:** 2
+* **Academic Engineering (DBMS & SQL Practical Lab Curriculum — Full-Stack Relational Revision):**
+  * Reviewed and walked through the complete DBMS practical lab curriculum in sequential dependency order across DDL, DML, DQL, Constraints, Joins, Views, Indexing, DCL, and TCL:
+    1. *DBMS Setup & Schema Definition (DDL):* Covered relational environment setup (MySQL / PostgreSQL / SQL Server), database/schema initialization, system catalog verification, and `CREATE`, `ALTER`, and `DROP` DDL operations.
+    2. *Integrity Constraints & Referential Safety:* Enforced schema invariants using `PRIMARY KEY`, `FOREIGN KEY` (referential integrity validation), `UNIQUE`, `CHECK`, and `DEFAULT` constraints alongside constraint-violation error handling.
+    3. *Data Manipulation & Analytical Querying (DML & DQL):* Practiced conditional `INSERT`, `UPDATE`, and `DELETE` statements alongside DQL reporting queries using complex `WHERE` predicates, aggregate functions, `GROUP BY`, `HAVING`, and `ORDER BY`.
+    4. *Subqueries, Joins & Views:* Implemented nested subqueries (`IN`, `EXISTS`, `ANY`, `ALL`), multi-table joins (`INNER`, `LEFT`, `RIGHT`, `FULL`), standard Views, and Materialized Views for multi-table relational scenarios.
+    5. *Indexing & Query Execution Plans:* Contrasted primary and secondary indexing strategies; evaluated indexed vs. non-indexed column scan performance via `EXPLAIN` / execution plan analysis.
+    6. *Access Control & Transaction Management (DCL & TCL):* Managed database users, roles, and privilege scopes via DCL (`GRANT`, `REVOKE`), and walked through ACID transaction workflows and concurrency basics using TCL (`COMMIT`, `ROLLBACK`, `SAVEPOINT`).
+
+---
+
 **2026-11-16**
 * **Hours:** 4
 * **Project Work (Weapon Detector — Repository Refinement):**
