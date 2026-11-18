@@ -1,5 +1,17 @@
 # November 2026
 
+**2026-11-18**
+* **Hours:** 3
+* **Python Programming & Data Science Stack (Core Python, NumPy, Matplotlib/Seaborn & Tkinter GUI):**
+  * Reviewed and practiced Python fundamentals through numerical computing, statistical visualization, and desktop GUI event loops in sequential order:
+    1. *Python Basics & Control Flow:* Revised core syntax, data structures (`list`, `tuple`, `dict`, `set`), conditional branching, iteration loops, and list/dict comprehensions.
+    2. *Functions & Modularity:* Practiced defining reusable functions (`def`), positional/keyword/default parameters, `*args` and `**kwargs` packing, `return` control flow, lexical scope, and anonymous `lambda` functions.
+    3. *Numerical Computing (`NumPy`):* Built and manipulated multi-dimensional `ndarray` structures (`arange`, `linspace`, `zeros`, `ones`, `reshape`), indexing/slicing, broadcasting rules, vectorized operations, and axis-aware statistical aggregations (`mean`, `median`, `std`, `sum`).
+    4. *Data Visualization (`Matplotlib` & `Seaborn`):* Generated multi-panel plots using Matplotlib (`pyplot` and `Figure`/`Axes` OOP API) alongside Seaborn statistical charts (histograms, box/violin plots, scatter/line plots, bar charts, heatmaps) with customized labels, legends, and layout styling.
+    5. *Desktop GUI Programming (`Tkinter`):* Built event-driven GUI windows (`Tk()`, `mainloop()`), core widgets (`Label`, `Entry`, `Button`, `Frame`, `Canvas`), layout geometry managers (`pack`, `grid`, `place`), and callback event bindings.
+
+---
+
 **2026-11-17**
 * **Hours:** 2
 * **Academic Engineering (DBMS & SQL Practical Lab Curriculum — Full-Stack Relational Revision):**
