@@ -1,5 +1,17 @@
 # November 2026
 
+**2026-11-19**
+* **Hours:** 3
+* **Data Engineering & Scientific Python (`NumPy` & `Pandas`):**
+  * Studied array-oriented numerical computation in NumPy and tabular data manipulation pipelines in Pandas in sequential dependency order:
+    1. *NumPy Memory Layouts & Vectorization:* Examined contiguous `ndarray` representations (`dtype`, `shape`, `strides`), view vs. copy semantics, boolean and fancy indexing, broadcasting rules, and vectorized element-wise/linear-algebra operations.
+    2. *Pandas Core Data Structures:* Covered index-aligned `Series` and columnar `DataFrame` abstractions backed by NumPy arrays; practiced dataset ingestion/export (CSV, JSON) and schema/statistical inspection (`info()`, `describe()`, `dtypes`).
+    3. *Indexing, Filtering & Selection:* Applied explicit label-based (`.loc`) and integer-position-based (`.iloc`) indexing, compound boolean masking, multi-key sorting (`sort_values`, `sort_index`), and copy-safe column assignments.
+    4. *Data Cleaning & Vectorized Transforms:* Handled missing data (`isna`, `dropna`, `fillna`), duplicate pruning (`drop_duplicates`), type casting (`astype`), string/datetime accessors (`.str`, `.dt`), and conditional vectorization (`np.where`, `apply`, `map`).
+    5. *Grouping, Aggregation & Relational Merging:* Executed split-apply-combine transformations with `groupby().agg()`, summary reshaping via `pivot_table`, and SQL-equivalent multi-table combinations (`merge` inner/left/right/outer joins and `concat`).
+
+---
+
 **2026-11-18**
 * **Hours:** 3
 * **Python Programming & Data Science Stack (Core Python, NumPy, Matplotlib/Seaborn & Tkinter GUI):**
