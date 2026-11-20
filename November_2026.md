@@ -1,5 +1,16 @@
 # November 2026
 
+**2026-11-20**
+* **Hours:** 6
+* **Computer Vision & Real-Time ML Systems (Pose Kinematics, Causal Sequence Modeling & GPU Profiling):**
+  * Studied and experimented with multi-stage real-time video inference concepts, focusing on temporal causality and GPU latency trade-offs:
+    1. *Conditional Gating in Multi-Stage Pipelines:* Explored compute optimization by gating expensive downstream stages (secondary verification and pose estimation) behind primary detection/tracking triggers so idle frames bypass redundant GPU passes.
+    2. *Pose Kinematics & Invariant Feature Extraction:* Practiced extracting scale- and FPS-invariant geometric/motion features from pose keypoints (normalized joint distances, 1st/2nd-order velocities, and stability metrics) combined with velocity-IoU object tracking.
+    3. *Temporal Causality & Leakage Prevention:* Compared deterministic Finite State Machines (FSMs) against causal 1D-TCN and GRU sequence architectures; caught future-frame leakage introduced by standard normalization layers across sequences and replaced it with per-timestep causal normalization verified via causality unit tests.
+    4. *CUDA-Synchronized Latency Profiling:* Measured stage-by-stage GPU inference latency (`mean` / `P95`) under FP16 execution; observed how PyTorch eager kernel-launch overhead limits frame rate on consumer GPUs, motivating track-level caching and TensorRT optimization.
+
+---
+
 **2026-11-19**
 * **Hours:** 3
 * **Data Engineering & Scientific Python (`NumPy` & `Pandas`):**
