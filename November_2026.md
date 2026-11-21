@@ -1,3 +1,25 @@
+
+
+
+
+2026 -11-21
+hours 8 
+
+worked on weapon detection
+Commit 1b2ebee
+feat: add pre-firing weapon intent anticipation pipeline, 6-class verifier v2, and benchmarks
+
+
+
+
+
+
+
+
+
+
+
+
 # November 2026
 
 **2026-11-20**
