@@ -1,26 +1,26 @@
-
-
-
-
-2026 -11-21
-hours 8 
-
-worked on weapon detection
-Commit 1b2ebee
-feat: add pre-firing weapon intent anticipation pipeline, 6-class verifier v2, and benchmarks
-
-
-
-
-
-
-
-
-
-
-
-
 # November 2026
+
+**2026-11-22**
+* **Hours:** 4
+* **Academic Engineering (DBMS — University Exam Full-Syllabus Revision):**
+  * Conducted a structured, end-to-end DBMS revision session targeting university theory and query-design exam topics in sequential order:
+    1. *Relational Model & Integrity Constraints:* Revised relation schemas, degree/cardinality, key hierarchy (super, candidate, primary, composite, foreign keys), and entity/referential integrity enforcement.
+    2. *ER Modeling & Relational Algebra:* Reviewed ER/EER schema design (weak entities, participation/cardinality constraints, ER-to-table reduction) and formal relational algebra operators ($\sigma$, $\pi$, $\rho$, set operations, joins, and division).
+    3. *Functional Dependencies & Normalization:* Practiced attribute closures, Armstrong's axioms, minimal/canonical cover, and schema normalization across 1NF, 2NF, 3NF, and BCNF while preserving lossless-join and dependency-preservation properties.
+    4. *SQL, Subqueries & Views:* Revised DDL/DML/DQL/DCL/TCL statements, `GROUP BY`/`HAVING` aggregations, multi-table joins, correlated/nested subqueries (`IN`, `EXISTS`), and View abstractions.
+    5. *Transactions, Concurrency & Indexing:* Reviewed ACID properties, transaction state lifecycles, conflict vs. view serializability, Two-Phase Locking (2PL) & deadlock prevention, log-based recovery, B/B+ Tree indexing, and hashing schemes.
+
+---
+
+**2026-11-21**
+* **Hours:** 8
+* **Project Work (Weapon Detection — Intent Anticipation Pipeline, Verifier v2 & Benchmarks [`1b2ebee`]):**
+  * Integrated core pipeline updates and evaluation suites for the weapon detection system (commit `1b2ebee`):
+    1. *Pre-Firing Intent Anticipation Pipeline:* Added the pre-firing weapon intent anticipation pipeline into the project architecture.
+    2. *6-Class Verifier v2:* Integrated the updated 6-class verifier v2 stage to improve multi-class verification fidelity.
+    3. *Benchmarking:* Ran and documented pipeline benchmarks across the updated components.
+
+---
 
 **2026-11-20**
 * **Hours:** 6
