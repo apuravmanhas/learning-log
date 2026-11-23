@@ -1,5 +1,12 @@
 # November 2026
 
+**2026-11-23**
+* **Hours:** 8
+* **Project Work (MemWall — Stealth Development):**
+  * Deep engineering and implementation session on Project MemWall (architectural and technical details kept under wraps ahead of public release).
+
+---
+
 **2026-11-22**
 * **Hours:** 4
 * **Academic Engineering (DBMS — University Exam Full-Syllabus Revision):**
