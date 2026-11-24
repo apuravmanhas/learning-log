@@ -1,5 +1,17 @@
 # November 2026
 
+**2026-11-24**
+* **Hours:** 5
+* **Hardware Description & Digital Design (Verilog HDL Foundations):**
+  * Studied the foundational concepts of Verilog HDL and gained introductory hands-on exposure to hardware modeling in sequential order:
+    1. *Hardware Concurrency & Logic Values:* Contrasted concurrent hardware execution against sequential software flow; covered 4-state logic (`0`, `1`, `x`, `z`), number literals (sized binary/hex), and bit-vector indexing.
+    2. *Modules, Ports & Net Types:* Examined `module` / `endmodule` interfaces (`input`, `output`, `inout`) and core data types — `wire` (continuously driven physical nets) versus `reg` (variables holding values across procedural assignments).
+    3. *Abstraction & Modeling Styles:* Covered structural/gate-level instantiation, dataflow modeling via continuous `assign` statements, and behavioral modeling inside `initial` and `always` blocks.
+    4. *Combinational vs. Sequential Semantics:* Distinguished level-sensitive combinational blocks (`always @(*)`) using blocking assignments (`=`) from edge-triggered sequential flip-flop logic (`always @(posedge clk)`) using non-blocking assignments (`<=`).
+    5. *Introductory Testbench Exposure:* Explored basic testbench structure — instantiating a Design Under Test (DUT), generating clock/stimulus waveforms, and inspecting outputs with `$display` and `$monitor`.
+
+---
+
 **2026-11-23**
 * **Hours:** 8
 * **Project Work (MemWall — Stealth Development):**
