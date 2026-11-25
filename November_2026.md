@@ -1,5 +1,16 @@
 # November 2026
 
+**2026-11-25**
+* **Hours:** 2
+* **Academic Engineering (OOPs — University Exam Revision):**
+  * Completed a focused revision of Object-Oriented Programming concepts ahead of university exams:
+    1. *Core Pillars & Object Lifecycle:* Reviewed classes, encapsulation, abstraction, access specifiers (`public`, `private`, `protected`), constructors (default, parameterized, copy), and destructors.
+    2. *Inheritance Hierarchies:* Revised single, multilevel, multiple, hierarchical, and hybrid inheritance alongside `virtual` base classes for resolving diamond-problem ambiguity.
+    3. *Polymorphism & Friend Access:* Reviewed compile-time polymorphism (function and unary/binary operator overloading), runtime polymorphism (method overriding, `virtual` dispatch, pure virtual functions / abstract classes), and `friend` functions/classes.
+    4. *Templates & Exception Handling:* Revisited generic function/class templates and `try` / `catch` / `throw` exception flows including user-defined exceptions.
+
+---
+
 **2026-11-24**
 * **Hours:** 5
 * **Hardware Description & Digital Design (Verilog HDL Foundations):**
