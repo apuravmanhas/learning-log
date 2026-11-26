@@ -1,5 +1,16 @@
 # November 2026
 
+**2026-11-26**
+* **Hours:** 1
+* **Academic Engineering (Software Development & Engineering — University Exam Revision):**
+  * Completed a rapid, high-yield revision of software development lifecycle and engineering fundamentals ahead of university exams:
+    1. *SDLC Models & Requirements:* Reviewed Waterfall, Iterative, Spiral, and Agile process models alongside Software Requirements Specification (SRS) and functional vs. non-functional requirements analysis.
+    2. *System Modeling & Design:* Revised Data Flow Diagrams (DFD), Entity-Relationship (ER) modeling, Data Dictionaries, and core UML diagrams.
+    3. *Project Estimation & Risk:* Reviewed size/effort estimation (COCOMO), Gantt chart scheduling, and risk management fundamentals.
+    4. *Testing & Quality Assurance:* Revisited verification vs. validation and testing tiers (unit, integration, system, and acceptance testing).
+
+---
+
 **2026-11-25**
 * **Hours:** 2
 * **Academic Engineering (OOPs — University Exam Revision):**
