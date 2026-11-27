@@ -1,5 +1,16 @@
 # November 2026
 
+**2026-11-27**
+* **Hours:** 2
+* **Academic Engineering (Software Engineering — Advanced Concepts & Exam Revision):**
+  * Extended university exam revision into software design quality, testing techniques, complexity metrics, and maintenance workflows:
+    1. *Design Modularity — Coupling & Cohesion:* Revised architectural vs. detailed design, information hiding, coupling spectrum (data, stamp, control, common, content) vs. cohesion levels (functional through coincidental) for low-coupling, high-cohesion systems.
+    2. *Black-Box & White-Box Testing:* Reviewed equivalence partitioning and boundary-value analysis alongside white-box coverage criteria (statement, branch, path coverage) and McCabe's cyclomatic complexity ($V(G) = E - N + 2P$).
+    3. *Software Metrics & Quality Assurance:* Revised Function Point (FP) sizing, Halstead complexity measures, and core software quality attributes (reliability, maintainability, portability, efficiency).
+    4. *Maintenance & Configuration Management (SCM):* Reviewed corrective, adaptive, perfective, and preventive maintenance, reverse/re-engineering concepts, and SCM baselines and change-control lifecycles.
+
+---
+
 **2026-11-26**
 * **Hours:** 1
 * **Academic Engineering (Software Development & Engineering — University Exam Revision):**
