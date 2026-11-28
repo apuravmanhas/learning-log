@@ -1,5 +1,15 @@
 # November 2026
 
+**2026-11-28**
+* **Hours:** 2
+* **Academic Engineering (Professional Ethics — University Exam Quiz Practice):**
+  * Completed timed MCQ and scenario-based quiz practice for the university Professional Ethics exam:
+    1. *Codes of Conduct & Core Principles:* Practiced questions on engineering/computing ethics frameworks (public welfare primacy, integrity, competence, and accountability).
+    2. *Workplace Dilemmas & Responsibility:* Reviewed case-based scenarios covering conflicts of interest, confidentiality/NDAs, whistleblowing obligations, and safety-critical sign-off ethics.
+    3. *IP, Data Privacy & Legal Boundaries:* Drilled MCQs on intellectual property, software licensing/plagiarism, user data privacy, and distinguishing legal compliance from ethical duty.
+
+---
+
 **2026-11-27**
 * **Hours:** 2
 * **Academic Engineering (Software Engineering — Advanced Concepts & Exam Revision):**
